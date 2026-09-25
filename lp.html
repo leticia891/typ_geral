@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Landing page QA</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Landing page QA</title>
+  </head>
 
-<body>
-  <h1>Landing page de teste</h1>
+  <body>
+    <h1>Landing page de teste</h1>
 
-  <!-- arquivo servido localmente pelo python, com o comando 'py -m http.server 8080 --bind 127.0.0.1 --directory "C:\Users\Suporte 02\Documents\Pages-QA\typ_geral". A lp também pode ser acessada trocando o nome do arquivo' -->
-  <!-- <form action="http://obrigado.127-0-0-1.nip.io:8080/typ.html" method="GET"> -->
-  <!-- <form action="https://benevolent-stardust-70b42e.netlify.app/typ.html" method="GET"> -->
-  <form action="https://leticia891.github.io/typ_geral/typ.html" method="GET">
-    <input
-      type="text"
-      name="name"
-      placeholder="Nome"
-      required
-    />
+    <!-- arquivo servido localmente pelo python, com o comando 'py -m http.server 8080 --bind 127.0.0.1 --directory "C:\Users\Suporte 02\Documents\Pages-QA\typ_geral". A lp também pode ser acessada trocando o nome do arquivo' -->
+    <!-- <form action="http://obrigado.127-0-0-1.nip.io:8080/typ.html" method="GET"> -->
+    <!-- <form action="https://benevolent-stardust-70b42e.netlify.app/typ.html" method="GET"> -->
+    <form action="https://leticia891.github.io/typ_geral/typ.html" method="GET">
+      <input
+        type="text"
+        name="name"
+        placeholder="Nome"
+        required
+      />
 
-    <input
-      type="email"
-      name="email"
-      placeholder="E-mail"
-      required
-    />
+      <input
+        type="email"
+        name="email"
+        placeholder="E-mail"
+        required
+      />
 
-    <button type="submit">
-      Converter
-    </button>
+      <input
+        type="text"
+        name="empresa"
+        placeholder="Empresa"
+      />
 
-    <!-- redireciona p pg de conclusão de compra de e-commerce (typ com script comentado de lead por compra -> e-commerce) -->
-    <!-- <button type="submit">Simular compra</button> -->
-  </form>
+      <button type="submit">
+        Converter
+      </button>
 
-  <!-- captura de dados em formulário próprio -->
-  <script>!function(e,a,t,i){function n(){setTimeout((function(){e.bindFields(e.blId,e.trackFields)}),1500)}if(e.blDataLayer=e.blDataLayer||{nome:void 0,email:void 0,documento:void 0},e.blId="BL-69f39cd940ee2c795252e175-P7W5",e.trackFields=[{nome:"name"},{email:"email"}],e.Tracker)n();else{var o=a.getElementsByTagName("script")[0],r=a.createElement("script");r.async=!0,r.src="http://localhost:3000/trackerv3.js",r.onload=n,o.parentNode.insertBefore(r,o)}}(window,document);</script>
+      <!-- redireciona p pg de conclusão de compra de e-commerce (typ com script comentado de lead por compra -> e-commerce) -->
+      <!-- <button type="submit">Simular compra</button> -->
+    </form>
 
-  <!-- script de detecção de cliques -->
-   <!-- <script src="http://localhost:3000/trackerv3.js"></script> -->
-</body>
+    <!-- captura de dados em formulário próprio -->
+    <script>!function(e,a,t,i){function n(){setTimeout((function(){e.bindFields(e.blId,e.trackFields)}),1500)}if(e.blDataLayer=e.blDataLayer||{nome:void 0,email:void 0,documento:void 0},e.blId="BL-69f39cd940ee2c795252e175-P7W5",e.trackFields=[{nome:"name"},{email:"email"}],e.Tracker)n();else{var o=a.getElementsByTagName("script")[0],r=a.createElement("script");r.async=!0,r.src="http://localhost:3000/trackerv3.js",r.onload=n,o.parentNode.insertBefore(r,o)}}(window,document);</script>
+
+    <!-- script de detecção de cliques -->
+    <!-- <script src="http://localhost:3000/trackerv3.js"></script> -->
+  </body>
 </html>
